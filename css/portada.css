@@ -1,0 +1,16 @@
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: 100%;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    width: 10%;
+    height: 500px;
+}
+a,
+h1 {
+    color: white;
+    text-decoration: none;
+}
