@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SSH</title>
+        <style>
+            body {
+                background-color: lightskyblue;
+            }
+            img {
+                width: 48%;
+            }
+            h1{
+                text-align: center
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SSH</h1>
+        <h3>1. Instala un servidor SSH en tu sistema GNU/Linux y comprueba que el puerto
+            22 esta en escucha</h3>
+        <img src="img/1.png"/>
+        <img src="img/2.png"/>
+        <h3>2. Crea dos usuarios denominados usuario1 y usuario2, que vas a usarlos en
+            el ejercicio</h3>
+        <img src="img/3.png"/>
+        <h3>3. Comprueba que puedes acceder mediante ssh a esos usuarios</h3>
+        <img src="img/4.png"/>
+        <img src="img/5.png"/>
+        <h3>4. Cambia el puerto del servidor e intenta a acceder de nuevo</h3>
+        <img src="img/6.png"/>
+        <img src="img/7.png"/>
+        <h3>5. Cambia la configuración del servidor para que puedas acceder al sistema
+            con usuario1 y NO con usuario2</h3>
+        <img src="img/8.png"/>
+        <img src="img/9.png"/>
+        <h3>6. Cambia la configuración del servidor para que solo pueda acceder desde
+            una IP determinada</h3>
+        <img src="img/10.png"/>
+        <h3>7. Captura con wireshark una conexión ssh, comprueba que login y contraseña
+            van encriptada. Analiza cada una de las capas TCP/IP implicadas indicando los
+            datos mas relevantes,además del tamaño de cada capa, separando datos y cabecera</h3>
+        <img src="img/11.png"/>
+        <img src="img/12.png"/>
+        <p>Capa de acceso a la red (Física): 526 bytes</p>
+        <p>Capa de acceso a la red (Enlace de datos): Ethernet II</p>
+        <p>Capa de internet: IPV4</p>
+        <p>Capa de transporte: TCP</p>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#fondo {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+nav {
+    width: 10%;
+}
+a,
+h1 {
+    color: white;
+    text-decoration: none;
+}
+p {
+    padding: 15px;
+}
