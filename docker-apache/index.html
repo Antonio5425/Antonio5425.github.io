@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Docker-apache</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>Docker-apache</h1>
+        <h2>Instalación del servidor</h2>
+        <p>Preparamos los archivos de la Web que contendrá el servidor:</p>
+        <img src="img/1.png"/>
+        <img src="img/2.png"/>
+        <p>Creamos el fichero "Dockerfile" con este contenido:</p>
+        <img src="img/3.png"/>
+        <p>Generamos la imagen que nos servirá de plantilla para nuestros contenedores:</p>
+        <img src="img/4.png"/>
+        <p>Ahora podemos crear un contenedor "vivo":</p>
+        <img src="img/5.png"/>
+        <h2>Configuración</h2>
+        <p>Rehacer la imagen (cada vez que hagamos cambios):</p>
+        <img src="img/4.png"/>
+        <p>Parar el contenedor (para poder borrarlo):</p>
+        <img src="img/6.png"/>
+        <p>Borrar el contenedor:</p>
+        <img src="img/7.png"/>
+        <p>Copiar el archivo de configuración del contenedor a la máquina física:</p>
+        <img src="img/8.png"/>
+        <p>Modificamos el Dockerfile:</p>
+        <img src="img/9.png"/>
+        <h2>Creación del fichero htpasswd</h2>
+        <p>En el directorio del Dockerfile ejecutamos lo siguiente:</p>
+        <img src="img/10.png"/>
+        <p>En caso de no tenerlo instalado:</p>
+        <img src="img/11.png"/>
+        <h2>Añadir el .htpassword a la imagen</h2>
+        <p>Modificamos el Dockerfile para que quede así:</p>
+        <img src="img/12.png"/>
+        <h2>Añadimos la autenticación a Apache</h2>
+        <img src="img/13.png"/>
+        <h2>Creamos un script para automatizar la actualización de los contenedores</h2>
+        <img src="img/14.png"/>
+        <h2>Autenticación DIGEST</h2>
+        <p>Creamos el archivo de contraseñas:</p>
+        <img src="img/15.png"/>
+        <p>Modificamos el Dokcerfile:</p>
+        <img src="img/16.png"/>
+        <p>Modifcamos el httpd.conf añadiendo al final:</p>
+        <img src="img/17.png"/>
+        <h2>Añadiendo seguridad SSL al contenedor:</h2>
+        <p>Modificamos el script de generación de imágenes:</p>
+        <img src="img/18.png"/>
+        <p>Modificamos el Dockerfile:</p>
+        <img src="img/19.png"/>
+        <p>Modificamos el httpd.conf:</p>
+        <img src="img/20.png"/>
+        <img src="img/21.png"/>
+        <p>Ejecutamos el script "reload":</p>
+        <img src="img/22.png"/>
+    </body>
+</html>
