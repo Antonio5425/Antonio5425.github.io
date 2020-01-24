@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Docker-apache</h1>
-        <h2>Instalación del servidor</h2>
+        <h3>Instalación del servidor</h3>
         <p>Preparamos los archivos de la Web que contendrá el servidor:</p>
         <img src="img/1.png"/>
         <img src="img/2.png"/>
@@ -19,7 +19,7 @@
         <img src="img/4.png"/>
         <p>Ahora podemos crear un contenedor "vivo":</p>
         <img src="img/5.png"/>
-        <h2>Configuración</h2>
+        <h3>Configuración</h3>
         <p>Rehacer la imagen (cada vez que hagamos cambios):</p>
         <img src="img/4.png"/>
         <p>Parar el contenedor (para poder borrarlo):</p>
@@ -30,26 +30,26 @@
         <img src="img/8.png"/>
         <p>Modificamos el Dockerfile:</p>
         <img src="img/9.png"/>
-        <h2>Creación del fichero htpasswd</h2>
+        <h3>Creación del fichero htpasswd</h3>
         <p>En el directorio del Dockerfile ejecutamos lo siguiente:</p>
         <img src="img/10.png"/>
         <p>En caso de no tenerlo instalado:</p>
         <img src="img/11.png"/>
-        <h2>Añadir el .htpassword a la imagen</h2>
+        <h3>Añadir el .htpassword a la imagen</h3>
         <p>Modificamos el Dockerfile para que quede así:</p>
         <img src="img/12.png"/>
-        <h2>Añadimos la autenticación a Apache</h2>
+        <h3>Añadimos la autenticación a Apache</h3>
         <img src="img/13.png"/>
-        <h2>Creamos un script para automatizar la actualización de los contenedores</h2>
+        <h3>Creamos un script para automatizar la actualización de los contenedores</h3>
         <img src="img/14.png"/>
-        <h2>Autenticación DIGEST</h2>
+        <h3>Autenticación DIGEST</h3>
         <p>Creamos el archivo de contraseñas:</p>
         <img src="img/15.png"/>
         <p>Modificamos el Dokcerfile:</p>
         <img src="img/16.png"/>
         <p>Modifcamos el httpd.conf añadiendo al final:</p>
         <img src="img/17.png"/>
-        <h2>Añadiendo seguridad SSL al contenedor:</h2>
+        <h3>Añadiendo seguridad SSL al contenedor:</h3>
         <p>Modificamos el script de generación de imágenes:</p>
         <img src="img/18.png"/>
         <p>Modificamos el Dockerfile:</p>
@@ -59,5 +59,16 @@
         <img src="img/21.png"/>
         <p>Ejecutamos el script "reload":</p>
         <img src="img/22.png"/>
+        <h1>Docker reverse</h1>
+        <p>Preparamos el directorio</p>
+        <img src="img/docker-reverse/1.png"/>
+        <p>Contenido del fichero index.html</p>
+        <img src="img/docker-reverse/2.png"/>
+        <p>Contenido del fichero Dockerfile</p>
+        <img src="img/docker-reverse/3.png"/>
+        <p>Contenido del fichero httpd.conf</p>
+        <img src="img/docker-reverse/4.png"/>
+        <p>Contenido del fichero reload.sh</p>
+        <img src="img/docker-reverse/5.png"/>
     </body>
 </html>
